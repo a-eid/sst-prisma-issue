@@ -1,0 +1,20 @@
+{
+  "name": "@prisma-sst/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "prisma generate",
+    "db:push": "sst bind prisma db push",
+    "typecheck": "tsc -noEmit"
+  },
+  "dependencies": {
+    "@prisma/client": "5.5.2",
+    "prisma": "5.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/aws-lambda": "^8.10.125",
+    "vitest": "^0.34.6",
+    "sst": "^2.32.2"
+  }
+}
