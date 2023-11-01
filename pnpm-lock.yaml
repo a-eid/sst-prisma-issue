@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@prisma/client':
+        specifier: 5.5.2
+        version: 5.5.2(prisma@5.5.2)
+      prisma:
+        specifier: 5.5.2
+        version: 5.5.2
     devDependencies:
       '@tsconfig/node18':
         specifier: ^18.2.2

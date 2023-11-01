@@ -7,11 +7,15 @@
     "dev": "sst dev",
     "build": "sst build",
     "deploy": "sst deploy",
+    "postinstall": "prisma generate",
     "remove": "sst remove",
     "console": "sst console",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@prisma/client": "5.5.2",
+    "prisma": "5.5.2"
+  },
   "devDependencies": {
     "@types/node": "^20.8.10",
     "sst": "^2.32.2",

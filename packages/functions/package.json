@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "postinstall": "prisma generate",
     "db:push": "sst bind prisma db push",
     "typecheck": "tsc -noEmit"
   },
