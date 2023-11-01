@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "sst dev",
     "build": "sst build",
@@ -11,7 +14,6 @@
     "console": "sst console",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.8.10",
     "sst": "^2.32.2",
@@ -19,8 +21,5 @@
     "constructs": "10.3.0",
     "typescript": "^5.2.2",
     "@tsconfig/node18": "^18.2.2"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }
