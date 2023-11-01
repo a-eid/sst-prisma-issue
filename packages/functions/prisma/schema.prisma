@@ -9,6 +9,6 @@ datasource db {
 }
 
 model todo {
-  id   Int    @id
+  id String @id @default(cuid())
   name String
 }

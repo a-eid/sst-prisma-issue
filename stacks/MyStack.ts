@@ -7,6 +7,7 @@ export function API({ stack }: StackContext) {
     memorySize: 1024,
     url: true,
     environment: { DATABASE_URL: process.env.DATABASE_URL! },
+    nodejs: { esbuild: { external: ["@prisma/client", ".prisma"] } },
     copyFiles: [
       {
         from: "packages/functions/prisma/schema.prisma",
